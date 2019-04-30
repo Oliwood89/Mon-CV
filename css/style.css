@@ -1,0 +1,87 @@
+html, body, .grid-container { height: 100%; margin: 0;
+overflow: hidden;
+ }
+
+.grid-container * { 
+ 
+ position: relative;
+}
+
+.grid-container *:after { 
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: transparent;
+ 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 1fr 1fr 15%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". Photo Nom Infos Infos ." ". Expériences Description-expériences Description-expériences Description-expériences ." ". Expériences Description-expériences Description-expériences Description-expériences ." ". Compétences Description-compétences Description-compétences Description-compétences ." ". Compétences Description-compétences Description-compétences Description-compétences ." ". Formation Description-Formation Description-Formation Description-Formation ." ". Atouts Description-Atouts Description-Atouts Description-Atouts .";
+}
+
+.Photo { grid-area: Photo;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.Nom { grid-area: Nom;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+    background: rgba(55, 115, 155, 0.3);
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+.Infos { grid-area: Infos;
+    margin-top: 60px;
+    text-align: right;
+}
+
+.Expériences { grid-area: Expériences;
+    border-bottom: 10px;
+    margin-left: 15px;    
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background: rgba(55, 115, 155, 0.3);
+}
+
+.Description-expériences { grid-area: Description-expériences;
+    margin-left: 100px;
+    line-height: 22px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.Compétences { grid-area: Compétences;
+    margin-left: 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background: rgba(55, 115, 155, 0.3);
+}
+
+.Description-compétences { grid-area: Description-compétences;
+    margin-left: 100px;
+    vertical-align: middle;
+}
+
+.Formation { grid-area: Formation;
+    margin-left: 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background: rgba(55, 115, 155, 0.3);
+ }
+
+.Description-Formation { grid-area: Description-Formation;
+    margin-left: 100px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+.espace_top {
+    margin-top: 50px;
+}
