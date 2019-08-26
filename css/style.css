@@ -39,8 +39,12 @@ overflow: hidden;
 
 .Infos { grid-area: Infos;
     margin-top: 60px;
+<<<<<<< HEAD
     text-align: left;
     padding-left: 40px;
+=======
+    text-align: right;
+>>>>>>> 6e50810eff589d6a1ac62402066e10321dfffd35
 }
 
 .Expériences { grid-area: Expériences;
@@ -85,8 +89,11 @@ overflow: hidden;
 
 .espace_top {
     margin-top: 50px;
+<<<<<<< HEAD
 }
 
 .subtitle {
     padding-left : 20px;
+=======
+>>>>>>> 6e50810eff589d6a1ac62402066e10321dfffd35
 }
